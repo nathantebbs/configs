@@ -9,7 +9,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias update-neovim='/home/nate/dev/scripts/update-neovim-nightly.sh'
 alias vim="nvim"
-alias update-all='sudo pacman -Syu && sudo paru -Syu'
+alias update-all='sudo pacman -Syu && paru -Syu'
 alias g="git"
 alias ll="ls -l"
 alias personal="cd ~/dev/repos/personal/"

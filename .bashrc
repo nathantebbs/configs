@@ -10,6 +10,8 @@ alias grep='grep --color=auto'
 alias update-neovim='/home/nate/dev/scripts/update-neovim-nightly.sh'
 alias vim="nvim"
 alias g="git"
+alias todo="pandoc ~/dev/repos/personal/private/notes/general/todo.md | lynx -stdin"
+alias gcomit="git commit -m"
 alias ll="ls -lh"
 alias personal="cd ~/dev/repos/personal/"
 alias cc="~/dev/scripts/cc.sh"
@@ -41,4 +43,4 @@ parse_git_branch() {
 }
 
 # Custom PS1 prompt
-PS1="${BOLD}${GREEN}\u${RESET}@${BOLD}${YELLOW}\h${RESET}:${BOLD}${BLUE}\w${RESET}\$(parse_git_branch) ${BOLD}${CYAN}\$${RESET} "
+PS1="${BOLD}${GREEN}\u${RESET}@${BOLD}${YELLOW}\h${RESET}:${BOLD}${BLUE}\W${RESET}${RED}\$(parse_git_branch) \n${PURPLE}->${RESET} "

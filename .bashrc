@@ -10,7 +10,7 @@ alias grep='grep --color=auto'
 alias update-neovim='/home/nate/dev/scripts/update-neovim-nightly.sh'
 alias vim="nvim"
 alias g="git"
-alias ll="ls -l"
+alias ll="ls -lh"
 alias personal="cd ~/dev/repos/personal/"
 alias cc="~/dev/scripts/cc.sh"
 alias la="ls -la"
